@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/tabakitty.css">
+
+    <title>Tabacaria Online</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="imgs/logo.png" alt="">
+            <h1>TabaKitty</h1>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="box">
+            <div class="itens">
+                <div class="item">
+                    <div class="produto">
+                        <img src="imgs/bong.png">
+                    </div>
+                    <h3>Bong estiloso</h3>
+                    <span>Preço: R$35.00</span>
+                    <button onclick="addToCart('Bong')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="item">
+                    <div class="produto mais vendido">
+                        <img src="imgs/isqueiro.png">
+                        <div class="mais vendido">
+                            MAIS VENDIDO
+                        </div>
+                    </div>
+                    <h3>Isqueiro Rosa</h3>
+                    <span>Preço: R$5.00</span>
+                    <button onclick="addToCart('Isqueiro')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="item">
+                    <div class="produto">
+                        <img src="imgs/cinzeiro.png">
+                    </div>
+                    <h3>Cinzeiro fofo</h3>
+                    <span>Preço: R$10.00</span>
+                    <button onclick="addToCart('Cinzeiro')">Adicionar ao Carrinho</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </main>
+
+    <aside>
+        <div class="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <br>
+            <ul id="cart">
+            </ul>
+            <br>
+            <p>Total: R$<span id="total">0.00</span></p>
+        </div>
+    </aside>
+    <a href="creditos.html">Créditos</a>
+    <footer>
+        <p>&copy; 2023 Henrique</p>
+    </footer>
+
+    <script src="/js/tabakitty.js"></script>
+</body>
+
+</html>
